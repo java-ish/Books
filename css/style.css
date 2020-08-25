@@ -29,3 +29,85 @@ body{
 	font-family: 'Poppins', sans-serif;
 	font-weight: bold;
 }
+
+/*send message*/
+.send-message{
+	width: 100%;
+	padding: 30px 80px;
+	box-sizing: border-box;
+	display: table;
+	background: #fff;
+}
+
+.form{
+	margin-top: 2em;
+	display: block;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	box-shadow:5px 5px 50px #b8b5ad;
+}
+
+.form-group{
+	position: relative;
+}
+
+.form-group label{
+	font-family: "Poppins";
+	font-size: 15px;
+	position: absolute;
+top: 0;
+left: 0;
+transition: 0.5s;
+}
+
+.form-group input:focus ~ label,
+.form-group input:valid ~ label
+{
+	top: -12px;
+	font-size: 13px;
+	color: #4db6ac;
+	font-weight: bold;
+}
+
+.form input{
+	display: block;
+	margin: auto;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid gray;
+	outline: none;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-family: ubuntu;
+	margin-top: 50px;
+	transition: 1.5s ease;
+}
+
+.form input:nth-child(1){
+	margin-right: 5%; 
+}
+
+.form textarea{
+	width: 100%;	
+	border: 2px solid gray;
+	outline: none;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-family: ubuntu;
+	margin-bottom: 20px;
+	height: 300px;
+	transition: 0.5s;
+}
+
+.form textarea:focus{
+	border: 2px solid #4db6ac;
+}
+
+button{
+	border: none;
+	outline: none;
+}
+
+/*send message ends*/
