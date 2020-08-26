@@ -111,3 +111,9 @@ button{
 }
 
 /*send message ends*/
+
+@media (min-width: 200px) and (max-width: 650px){
+.btn{
+	font-size: 10px;
+}	
+}
