@@ -26,100 +26,137 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- manifest -->
+    <link rel="manifest" href="./manifest.json" crossorigin="use-credentials" />
+
+    <script>
+      if ("serviceworker" in navigator) {
+        navigator.serviceworker.register("sw.js");
+      }
+    </script>
+
     <title>Books for me!</title>
   </head>
   <body>
-
- <div class="content">
+    <div class="content">
       <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
-      <div class="card grey lighten-2  hoverable">
-        <div class="card-content white-text">
-          <div class="title">Select Your Option</div>
+        <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l3">
+          <div class="card grey lighten-2 hoverable">
+            <div class="card-content white-text">
+              <div class="title">Select Your Option</div>
 
-          <div class="box-1">
-            <div class="row">
-              <span class="subject">
-                <a class="btn grey darken-4">Mathematics</a>
-              </span>
-              <span class="link right">
-                <a class="waves-effect waves-light btn" href="https://drive.google.com/drive/folders/1z0b9p5ppoVZO_U3ept2AEQws8PXXd3JM?usp=sharing" target="_blank">Get Files</a>
-              </span>
+              <div class="box-1">
+                <div class="row">
+                  <span class="subject">
+                    <a class="btn grey darken-4">Mathematics</a>
+                  </span>
+                  <span class="link right">
+                    <a
+                      class="waves-effect waves-light btn"
+                      href="https://drive.google.com/drive/folders/1z0b9p5ppoVZO_U3ept2AEQws8PXXd3JM?usp=sharing"
+                      target="_blank"
+                      >Get Files</a
+                    >
+                  </span>
+                </div>
+              </div>
+
+              <div class="box-1">
+                <div class="row">
+                  <span class="subject">
+                    <a class="btn grey darken-4">Physics</a>
+                  </span>
+                  <span class="link right">
+                    <a
+                      class="waves-effect waves-light btn"
+                      href="https://drive.google.com/drive/folders/1aP4GhmrdFFGS71Nq_rwQJIk7txsSpgy2?usp=sharing"
+                      target="_blank"
+                      >Get Files</a
+                    >
+                  </span>
+                </div>
+              </div>
+
+              <div class="box-1">
+                <div class="row">
+                  <span class="subject">
+                    <a class="btn grey darken-4">Chemistry</a>
+                  </span>
+                  <span class="link right">
+                    <a
+                      class="waves-effect waves-light btn"
+                      href="https://drive.google.com/drive/folders/1pguIBNZ5x18x1YdDA_vnWgG1kh-sTAM-?usp=sharing"
+                      target="_blank"
+                      >Get Files</a
+                    >
+                  </span>
+                </div>
+              </div>
+
+              <div class="box-1">
+                <div class="row">
+                  <span class="subject">
+                    <a class="btn grey darken-4">Nepali</a>
+                  </span>
+                  <span class="link right">
+                    <a
+                      class="waves-effect waves-light btn"
+                      href="https://drive.google.com/drive/folders/1Zo1NzZD0R6XINGI8DiE6w2F51H3Oz8zr?usp=sharing"
+                      target="_blank"
+                      >Get Files</a
+                    >
+                  </span>
+                </div>
+              </div>
+
+              <div class="box-1">
+                <div class="row">
+                  <span class="subject">
+                    <a class="btn grey darken-4">English</a>
+                  </span>
+                  <span class="link right">
+                    <a
+                      class="waves-effect waves-light btn"
+                      href="https://drive.google.com/drive/folders/1hjG1M3YCWVD6mJFz4OP3NRjJ2Sn1rkl1?usp=sharing"
+                      target="_blank"
+                      >Get Files</a
+                    >
+                  </span>
+                </div>
+              </div>
+
+              <!-- form -->
+              <h1 class="title">Request for PDF</h1>
+              <div class="form m-auto">
+                <form action="https://formspree.io/meqrrdwg" method="POST">
+                  <div class="form-group">
+                    <span class="error" id="username-error"></span>
+                    <span class="error" id="name-error"></span>
+                    <input type="text" name="name" id="username" required="" />
+                    <label>Your Name</label>
+                  </div>
+
+                  <div class="form-group">
+                    <span class="error" id="email-error"></span>
+                    <input type="text" name="_replyto" id="email" required="" />
+                    <label>Your email</label>
+                  </div>
+
+                  <textarea
+                    name="message"
+                    placeholder="Your Request*"
+                    required=""
+                  ></textarea>
+
+                  <button type="submit">
+                    <a class="waves-effect waves-light btn">Send Message</a>
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
-
-                    <div class="box-1">
-            <div class="row">
-              <span class="subject">
-                <a class="btn grey darken-4">Physics</a>
-              </span>
-              <span class="link right">
-                <a class="waves-effect waves-light btn" href="https://drive.google.com/drive/folders/1aP4GhmrdFFGS71Nq_rwQJIk7txsSpgy2?usp=sharing" target="_blank">Get Files</a>
-              </span>
-            </div>
-          </div>
-
-            <div class="box-1">
-            <div class="row">
-              <span class="subject">
-                <a class="btn grey darken-4">Chemistry</a>
-              </span>
-              <span class="link right">
-                <a class="waves-effect waves-light btn" href="https://drive.google.com/drive/folders/1pguIBNZ5x18x1YdDA_vnWgG1kh-sTAM-?usp=sharing" target="_blank">Get Files</a>
-              </span>
-            </div>
-          </div>
-
-            <div class="box-1">
-            <div class="row">
-              <span class="subject">
-                <a class="btn grey darken-4">Nepali</a>
-              </span>
-              <span class="link right">
-                <a class="waves-effect waves-light btn" href="https://drive.google.com/drive/folders/1Zo1NzZD0R6XINGI8DiE6w2F51H3Oz8zr?usp=sharing" target="_blank">Get Files</a>
-              </span>
-            </div>
-          </div>
-
-          <div class="box-1">
-            <div class="row">
-              <span class="subject">
-                <a class="btn grey darken-4">English</a>
-              </span>
-              <span class="link right">
-                <a class="waves-effect waves-light btn" href="https://drive.google.com/drive/folders/1hjG1M3YCWVD6mJFz4OP3NRjJ2Sn1rkl1?usp=sharing" target="_blank">Get Files</a>
-              </span>
-            </div>
-          </div>
-
-<!-- form -->
-<h1 class="title">Request for PDF</h1>
-  <div class="form m-auto">
-    <form action="https://formspree.io/meqrrdwg" method="POST">
-
-      <div class="form-group">
-        <span class="error" id="username-error" ></span>
-        <span class="error" id="name-error" ></span>
-        <input type="text" name="name" id="username" required="">
-        <label>Your Name</label>
-      </div>
-
-      <div class="form-group">
-        <span class="error" id="email-error" ></span>
-        <input type="text" name="_replyto" id="email" required="">
-        <label>Your email</label>
-      </div>
-
-      <textarea name="message" placeholder="Your Request*" required=""></textarea>
-
-      <button type="submit"><a class="waves-effect waves-light btn">Send Message</a></button>
-    </form>
-  </div>
         </div>
       </div>
     </div>
-  </div>
- </div>
-
   </body>
 </html>
