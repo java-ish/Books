@@ -15,6 +15,14 @@ body {
   font-size: 28px;
   color: black;
   font-family: "Lato", sans-serif;
+  margin: 0;
+  position: relative;
+}
+
+.logo span {
+  color: #1a237e;
+  font-weight: bold;
+  font-family: Lato;
 }
 
 .box-1 {
@@ -28,6 +36,37 @@ body {
   box-shadow: 1px 1px 15px gray;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
+}
+
+.gradebox-title {
+  font-size: 23px;
+}
+
+.app-box {
+  height: 180px;
+}
+
+.app-lol {
+  background: #ffb300;
+}
+
+.app-phypro {
+  background: #4a148c;
+}
+
+.appbox-title {
+  font-size: 16px;
+}
+
+.app-image {
+  display: block;
+  margin: auto;
+  width: 25%;
+}
+
+.app-image img {
+  margin-top: 10px;
+  width: 100%;
 }
 
 .link {
@@ -125,4 +164,8 @@ button {
   .btn {
     font-size: 10px;
   }
+}
+
+footer {
+  bottom: 0;
 }
